@@ -1,0 +1,19 @@
+{
+  "name": "twitchChatSniffer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "csv-writer": "^1.5.0",
+    "node-cron": "^2.0.3"
+  },
+  "devDependencies": {
+    "tmi.js": "^1.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
