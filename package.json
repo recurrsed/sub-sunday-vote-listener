@@ -8,6 +8,7 @@
     "node-cron": "^2.0.3"
   },
   "devDependencies": {
+    "firebase-admin": "^8.13.0",
     "tmi.js": "^1.5.0"
   },
   "scripts": {
