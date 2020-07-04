@@ -16,7 +16,7 @@ const onMessageHandler = (channel, userstate, message, self) => {
   // Don't listen to my own messages..
   if (self) return;
 
-  if (message.includes('!vote')) {
+  if (message.match(/^!vote \w/)) {
     pushToQueue({ userstate, message });
   }
 };
