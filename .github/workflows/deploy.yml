@@ -34,4 +34,4 @@ jobs:
           sudo -i
           echo "${{ secrets.FIREBASE_CONFIG }}" > firebase.json
           npm ci
-          ls -l
+          pm2 reload twitch-chat-sniffer
