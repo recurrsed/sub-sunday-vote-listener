@@ -21,7 +21,7 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
       with:
         source: "."
-        target: "/var/www/html/twitchChatSniffer"
+        target: "/var/www/html/twitch-chat-sniffer"
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
@@ -30,4 +30,7 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: ls
+      run: sudo -i
+      run: echo ${{ FIREBASE_CONFIG }} > firebase.json
+      run: npm ci
+      run: ls -l
