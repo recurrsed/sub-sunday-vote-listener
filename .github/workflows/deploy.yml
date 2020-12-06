@@ -32,6 +32,6 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
         script: |
           sudo -i
-          echo ${{ secrets.FIREBASE_CONFIG }} > firebase.json
+          echo "${{ secrets.FIREBASE_CONFIG }}" > firebase.json
           npm ci
           ls -l
