@@ -21,7 +21,7 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
       with:
         source: "."
-        target: "/var/www/twitchChatSniffer"
+        target: "/var/www/html/twitchChatSniffer"
 
     - name: Executing remote command
       uses: appleboy/ssh-action@master
