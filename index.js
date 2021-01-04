@@ -9,7 +9,7 @@ let QUEUE = [];
  * 
  * @param {Object} data - { channel_id: string, action_type: string, userState: any, content: any }
  */
-const pushToQueue = (data) => QUEUE.push({ ...data, timestamp: new Date().toLocaleString() });
+const pushToQueue = (data) => QUEUE.push({ ...data, timestamp: new Date().getTime() });
 
 // Called every time a message comes in
 const onMessageHandler = (channel, userstate, message, self) => {
