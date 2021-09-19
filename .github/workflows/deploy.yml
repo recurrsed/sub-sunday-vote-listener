@@ -31,6 +31,6 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
           script: |
             sudo -i
-            echo "${{ secrets.FIREBASE_CONFIG }}" > firebase.json
+            echo "${{ secrets.FIREBASE_CONFIG }}" > ~/projects/sub-sunday-vote-listener/firebase.json
             npm ci
             pm2 reload sub-sunday-vote-listener
