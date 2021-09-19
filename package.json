@@ -5,12 +5,11 @@
   "main": "index.js",
   "dependencies": {
     "csv-writer": "^1.5.0",
-    "node-cron": "^2.0.3"
+    "node-cron": "^2.0.3",
+    "tmi.js": "^1.5.0",
+    "firebase-admin": "^8.13.0"
   },
-  "devDependencies": {
-    "firebase-admin": "^8.13.0",
-    "tmi.js": "^1.5.0"
-  },
+  "devDependencies": {},
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
